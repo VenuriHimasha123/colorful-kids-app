@@ -2,11 +2,11 @@ import React, { useState } from "react";
 import "./App.css";
 
 const animals = [
-  { name: "Lion", color: "#FFD700", emoji: "🦁" },
-  { name: "Elephant", color: "#87CEEB", emoji: "🐘" },
-  { name: "Monkey", color: "#FFB6C1", emoji: "🐒" },
-  { name: "Panda", color: "#D3D3D3", emoji: "🐼" },
-  { name: "Frog", color: "#32CD32", emoji: "🐸" },
+  { name: "Lion", color: "#ff0000ff", emoji: "🦁" },
+  { name: "Elephant", color: "#eb8787ff", emoji: "🐘" },
+  { name: "Monkey", color: "#eb0c0cff", emoji: "🐒" },
+  { name: "Panda", color: "#ff0606ff", emoji: "🐼" },
+  { name: "Frog", color: "#cd3f32ff", emoji: "🐸" },
 ];
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>🌈 Fun Animal Cards for Kids 🐾</h1>
+      <h1>new sub</h1>
+      <h1>🌈Animal Cards for Kids 🐾</h1>
       <div className="card-container">
         {animals.map((animal, index) => (
           <div
@@ -29,6 +30,7 @@ function App() {
       </div>
       {selectedAnimal && <h2>You clicked: {selectedAnimal}</h2>}
     </div>
+    
   );
 }
 
